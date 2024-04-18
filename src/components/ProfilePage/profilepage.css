@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+.create-profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  
+  .dribbble-text {
+    font-family: 'Parisienne', cursive;
+    color: #e74c3c;
+    font-size: 28px;
+  }
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 600px;
+    padding-right: 16px; 
+    line-height: 3.5rem;
+     
+  }
+  
+  .profile-content h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .profile-content p {
+    color: #666;
+    margin-bottom: 24px;
+  }
+  
+
+  .avatar-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .avatar-circle {
+    width: 160px;
+    height: 160px;
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    overflow: hidden;
+  }
+  
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .avatar-btn {
+    background-color: #dad5d5;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 1.5rem;
+  }
+  
+  .avatar-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .or-default {
+    margin-left: 16px;
+    color: #666;
+  }
+  
+  .location-section {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  
+  .location-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .location-section input {
+    width: 100%;
+    padding: 8px 12px;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+
+  }
+  
+  .next-btn {
+    background-color: #cf0dd6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  .next-btn:hover {
+    background-color: #8a1f8e;
+  }
+  .or-default{
+    margin-top: 0.5rem;
+  }
+  .or-default::before{
+    content: ">";
+  }
+  .location-section>label{
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+
+  .next-btn.disabled {
+    background-color: #c920a47f;
+  }
+
+  @media (max-width: 680px) {
+    .profile-content {
+        margin-left: 5rem;
+    }
+    h1 {
+      margin-bottom: 0rem;
+  }
+  }
+
+  @media (max-width: 560px) {
+    .profile-content h1 {
+        font-size: 1.5rem;
+      }
+  }
+  @media (max-width: 495px) {
+    .container {
+      padding: 24px;
+      height: auto;
+    }
+    .profile-content {
+        margin-left: 0rem;
+    }
+  .avatar-btn{
+   margin-left: 2.5rem;
+  }
+    .dribbble-text {
+      font-size: 24px;
+    }
+    .profile-content {
+        line-height: 2.5rem;
+    }
+    .profile-content h2 {
+      text-align: center;
+    }
+  
+    .avatar-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .avatar-circle {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+    .location-section,.location-section input {
+        text-align: center;
+    }
+    .next-btn{
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .avatar-circle {
+        width: 130px;
+        height: 130px;
+    }
+    .profile-content h1,.profile-content p  {
+        text-align: center;
+    }
+  }

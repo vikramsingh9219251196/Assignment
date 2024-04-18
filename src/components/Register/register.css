@@ -1,0 +1,202 @@
+.registration-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:rgba(207, 204, 204, 0.8);
+  }
+  .submit-button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .registration-container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 80vh;
+  }
+  
+  .left-side {
+    flex-basis: 35%;
+    background-image: url('../../assets/register.png');
+    background-size: auto;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-right: 5rem;
+    background-repeat: no-repeat;
+  }
+  
+  .right-side {
+    flex-basis: 45%;
+    padding: 90px 40px;
+  }
+  
+  .top-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    font-weight: 800;
+  }
+  
+  .top-bar a {
+    color: #8b5cf6;
+    text-decoration: none;
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .name-row .form-field {
+    flex-basis: 48%;
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  .form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+  
+  .form-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkbox-field {
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-field input {
+    margin-right: 10px;
+  }
+  
+  .submit-button {
+    background-color: #d92ed9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+  }
+  
+  .bottom-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    .registration-container {
+      width: 90%;
+      max-width: 800px;
+      height: 100%;
+    }
+  
+    .left-side {
+      flex-basis: 60%;
+      margin-right: 15px;
+      background-size: auto;
+      background-repeat: no-repeat;
+
+    }
+    
+
+    .right-side {
+      flex-basis: 65%;
+      padding: 100px 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .registration-container {
+      flex-direction: column;
+      width: 95%;
+      max-width: 500px;
+    }
+  
+    .left-side {
+      display: none;
+    }
+  
+    .right-side {
+      flex-basis: auto;
+      padding: 80px 30px;
+    }
+  
+    .name-row {
+      flex-direction: column;
+    }
+  
+    .name-row .form-field {
+      flex-basis: auto;
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .registration-container {
+      width: 100%;
+      border-radius: 0;
+      height: 100%;
+    }
+  
+    .left-side {
+      flex-basis: 150px;
+    }
+  
+    .right-side {
+      padding: 20px;
+    }
+  
+    .form-field input {
+      padding: 8px;
+    }
+  
+    .submit-button {
+      padding: 8px 16px;
+    }
+  
+    .bottom-text {
+      font-size: 12px;
+    }
+    .top-bar {
+        position: absolute;
+        top: 36rem;
+        right: 8rem;
+        text-align: center;
+
+      }
+  }
+
+  @media (max-width: 315px) {
+    .top-bar {
+      top: 39rem;
+      right: 7rem;
+      font-size: 10px;
+      }
+  }
